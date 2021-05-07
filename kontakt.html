@@ -21,23 +21,37 @@
 </head>
 
 <body>
-    <h1 class="t-a-c"><img class="img-s" src="./IMG/kebab-roll.png" alt=""><a class="hM" href="./index.html #KEBABITO">KEBABITO OBOK MAHMEDA</a><img class="img-s" src="./IMG/kebab-roll.png" alt=""></h1>
-    <div class="menu t-a-c" id="KONTAKT"><h3><a class="m-f" href="./kontakt.html #MENU"><img src="./IMG/contact-book.png" alt="" class="img-ss"> KONTAKT <img src="./IMG/contact-book.png" alt="" class="img-ss"></a></h3></div>
+    <h1 class="t-a-c"><img class="img-s" src="./IMG/kebab-roll.png" alt=""><a class="hM"
+            href="./index.html #KEBABITO">KEBABITO OBOK MAHMEDA</a><img class="img-s" src="./IMG/kebab-roll.png" alt="">
+    </h1>
+    <div class="menu t-a-c" id="KONTAKT">
+        <h3><a class="m-f" href="./kontakt.html #MENU"><img src="./IMG/contact-book.png" alt="" class="img-ss"> KONTAKT
+                <img src="./IMG/contact-book.png" alt="" class="img-ss"></a></h3>
+    </div>
+    <div class="brr"></div>
+
+    <div class="t-a-c"> <select onchange="xd()" class="ww" id="">
+            <option value="">KEBAB ŁAGODNY</option>
+            <option value="">KEBAB OSTRY</option>
+        </select>
+    </div>
     <div class="brr"></div>
     <div class="kontakt">
-        <input class="inp-in t-a-c" type="text" placeholder="Imię"> 
-        <input class="inp-in t-a-c" type="text" placeholder="Nazwisko">
+        <input class="inp-in t-a-c" type="text" id="fname" placeholder="Imię">
+        <input class="inp-in t-a-c" type="text" id="sname" placeholder="Nazwisko">
         <br>
-        <input class="inp t-a-c" type="text" placeholder="E-mail">
-        <input class="inp t-a-c" type="text" placeholder="Ulica">
-        <input class="inp t-a-c" type="text" placeholder="Numer telefonu">
+        <input class="inp t-a-c" type="text" id="em" placeholder="E-mail">
+        <input class="inp t-a-c" type="text" id="ad" placeholder="Ulica">
+        <input class="inp t-a-c" type="number" id="tl" placeholder="Numer telefonu">
         <br>
-        <input class="inpp t-a-c" type="text" placeholder="Wiadomość" >
+        <input class="inpp t-a-c" type="text" id="ms" placeholder="Wiadomość">
     </div>
-
-    
-
-
-<script src="main.js"></script>
+    <div class="brr"></div>
+    <div class="t-a-c">
+        <button type="button" onclick="wyslij()" class="btn btn-dark">WYŚLIJ</button>
+    </div>
+    <p class="t-a-c" id="imie-error" style="visibility: hidden;">BŁĘDNE IMIĘ</p>
+    <p class="t-a-c" id="nazwisko-error" style="visibility: hidden;">BŁĘDNE NAZWISKO</p>
+    <script src="main.js"></script>
 </body>
 </html>
